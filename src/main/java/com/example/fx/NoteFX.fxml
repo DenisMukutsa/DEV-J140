@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.fx.NoteFX"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane><?xml version="1.0" encoding="UTF-8"?>
+
+        <?import java.lang.*?>
+        <?import java.util.*?>
+        <?import javafx.scene.*?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+
+<GridPane id="GridPane" prefHeight="400.0" prefWidth="600.0"
+          stylesheets="/css/Note.css" styleClass="main"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.controller.NoteControl">
+
+<GridPane GridPane.rowIndex="0" GridPane.columnIndex="0">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="departurePort" text="Порт отправления: " />
+    <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="departurePortField" />
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="arrivalPort" text="Порт прибытия: " />
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="arrivalPortField" />
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="departureDate" text="Дата отправления: " />
+    <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="departureDateField" />
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="arrivalDate" text="Дата прибытия: " />
+    <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="arrivalDateField" />
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0" fx:id="cargoType" text="Тип груза: " />
+    <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="cargoTypeField" />
+</GridPane>
+
+<FlowPane GridPane.rowIndex="1" GridPane.columnIndex="0" >
+    <children>
+        <Button text="Добавить" onAction="#buttonAction"   fx:id="buttonAdd" />
+    </children>
+</FlowPane>
+
+<FlowPane GridPane.rowIndex="2" GridPane.columnIndex="0" >
+    <children>
+        <Label fx:id="infoLabel" />
+    </children>
+</FlowPane>
+
+</GridPane>
+

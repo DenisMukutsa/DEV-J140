@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="root" prefHeight="400.0" prefWidth="600.0"
+          stylesheets="/css/Authorization.css" styleClass="main"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.controller.AuthorizationControl">
+
+
+    <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0">
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="topLabel" text="Введите логин и пароль" />
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="useLabel" text="Логин: " />
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="useField" />
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="passLabel" text="Пароль: " />
+        <PasswordField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="passField" />
+    </GridPane>
+
+    <FlowPane GridPane.rowIndex="3" GridPane.columnIndex="0" >
+        <children>
+            <Button text="ВХОД"  onAction="#buttonAction" fx:id="buttonSignIn" />
+            <Button text="ВЫХОД"  onAction="#buttonOut" fx:id="buttonOut" />
+        </children>
+    </FlowPane>
+
+    <FlowPane GridPane.rowIndex="4" GridPane.columnIndex="0" >
+        <children>
+            <Label fx:id="infoLabel" />
+        </children>
+    </FlowPane>
+
+</GridPane>

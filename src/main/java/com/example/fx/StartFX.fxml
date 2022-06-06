@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="300" prefWidth="350" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.controller.StartControl">
+    <center>
+        <VBox id="VBox" stylesheets="/css/Start.css" styleClass="main">
+            <children>
+                <Label layoutX="50" layoutY="50" text="Журнал рейсов корабля" minHeight="50" minWidth="5" fx:id="startLabel" />
+                <Button layoutX="126" layoutY="120" text="Добро пожаловать!" onAction="#buttonAction" fx:id="buttonStart" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
